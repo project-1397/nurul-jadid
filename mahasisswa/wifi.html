@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SSO Universitas Nurul Jadid</title>
+    <meta name="description" content="Sistem Single Sign-On Terpadu Universitas Nurul Jadid">
+    <link rel="icon" href="https://sso.unuja.ac.id/assets/media/logos/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://sso.unuja.ac.id/assets/css/tailwind.min.css">
+    <link href="https://sso.unuja.ac.id/assets/plugins/fonts/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://sso.unuja.ac.id/assets/plugins/plugins.bundle.css">
+    <link rel="stylesheet" href="https://sso.unuja.ac.id/assets/css/style.bundle.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BD1KN2F8Z3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', "G-BD1KN2F8Z3");
+    </script>
+    <meta name="X-CSRF-TOKEN" content="4uKWCgXf1mTOEEUVq4xj5GihavmZlaw77DQM7VGx">
+    <script src="https://sso.unuja.ac.id/assets/js/request.js"></script>
+    <script src="https://sso.unuja.ac.id/assets/js/errorhandler.js"></script>
+    </head>
+
+<body class="min-h-screen bg-white font-poppins antialiased">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between h-16">
+                    <!-- Logo -->
+                    <div class="flex items-center gap-3">
+                        <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg hover:bg-gray-100">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+                        <img src="https://sso.unuja.ac.id/assets/media/illustrations/backgroud.webp" class="h-10 hidden sm:block"
+                            alt="Logo">
+                        <span class="font-semibold text-gray-800 text-sm sm:text-base lg:hidden">UNIVERSITAS NURUL
+                            JADID</span>
+                    </div>
+                    <!-- Desktop Nav -->
+                    <nav class="hidden lg:flex items-center gap-2">
+                        <a href="https://sso.unuja.ac.id/mahasiswa"
+                            class="transition-all duration-200 px-4 py-2 rounded-lg text-white text-sm sm:text-base font-semibold"
+                            style="background:#00264e;">
+                            <span class="flex items-center gap-2"><svg class="w-4 h-4" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                                </svg>Beranda</span>
+                        </a>
+                        <a href="https://sso.unuja.ac.id/mahasiswa/wifi"
+                            class="transition-all duration-200 px-4 py-2 rounded-lg text-white text-sm sm:text-base font-semibold"
+                            style="background:#7c3aed;">
+                            <span class="flex items-center gap-2"><svg class="w-4 h-4" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                                </svg>Wifi</span>
+                        </a>
+                        <a href="https://ejournal.unuja.ac.id/" target="_blank"
+                            class="transition-all duration-200 px-4 py-2 rounded-lg text-white text-sm sm:text-base font-semibold"
+                            style="background:#059669;">
+                            <span class="flex items-center gap-2"><svg class="w-4 h-4" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                                </svg>Ejournal</span>
+                        </a>
+                        <a href="https://sso.unuja.ac.id/mahasiswa/pengaturan"
+                            class="transition-all duration-200 px-4 py-2 rounded-lg text-white text-sm sm:text-base font-semibold"
+                            style="background:#00264e;">
+                            <span class="flex items-center gap-2"><svg class="w-4 h-4" fill="none"
+                                    stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>Pengaturan</span>
+                        </a>
+                    </nav>
+                    <!-- User Menu -->
+                    <div class="relative">
+                        <button id="user-menu-btn" class="flex items-center gap-2 p-2 rounded-lg hover:bg-gray-100">
+                            <img src="https://sso.unuja.ac.id/assets/media/logos/settings.webp"
+                                class="w-8 h-8 rounded-full border border-gray-200" alt="user">
+                        </button>
+                        <div id="user-menu"
+                            class="hidden absolute right-0 mt-3 w-64 bg-white rounded-2xl shadow-xl border border-gray-100 py-2 z-50 transform transition-all duration-200 origin-top-right"
+                            style="animation: slideDown 0.2s ease-out;">
+                            <!-- User Info -->
+                            <div class="px-4 py-3 border-b border-gray-100">
+                                <p class="text-base font-semibold text-gray-800">
+                                    RAMADANI</p>
+                                <p class="text-sm text-gray-500 truncate">
+                                    rmdn1397.05@gmail.com</p>
+                            </div>
+                            <!-- Menu Items -->
+                            <div class="py-2">
+                                <a href="https://sso.unuja.ac.id/mahasiswa/histori"
+                                    class="flex items-center gap-3 px-4 py-3 text-base text-gray-700 hover:bg-gradient-to-r hover:from-gray-50 hover:to-transparent transition-all duration-200 group">
+                                    <span
+                                        class="w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center group-hover:bg-blue-100 transition-colors">
+                                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        </svg>
+                                    </span>
+                                    <span>Histori Aktivitas</span>
+                                </a>
+                            </div>
+                            <!-- Logout -->
+                            <div class="border-t border-gray-100 pt-2">
+                                <a href="https://sso.unuja.ac.id/logout"
+                                    class="flex items-center gap-3 px-4 py-3 text-base text-red-600 hover:bg-gradient-to-r hover:from-red-50 hover:to-transparent transition-all duration-200 group">
+                                    <span
+                                        class="w-9 h-9 rounded-lg bg-red-50 flex items-center justify-center group-hover:bg-red-100 transition-colors">
+                                        <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor"
+                                            viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                                        </svg>
+                                    </span>
+                                    <span>Keluar Aplikasi</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Mobile Nav -->
+            <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-100 bg-white">
+                <div class="px-4 py-3 space-y-2">
+                    <a href="https://sso.unuja.ac.id/mahasiswa"
+                        class="block px-4 py-2 rounded-lg text-white text-sm sm:text-base font-semibold"
+                        style="background:#00264e;">Beranda</a>
+                    <a href="https://sso.unuja.ac.id/mahasiswa/wifi"
+                        class="block px-4 py-2 rounded-lg text-white text-sm sm:text-base font-semibold"
+                        style="background:#7c3aed;">Wifi Kampus</a>
+                    <a href="https://ejournal.unuja.ac.id/" target="_blank"
+                        class="block px-4 py-2 rounded-lg text-white text-sm sm:text-base font-semibold"
+                        style="background:#059669;">Ejournal</a>
+                    <a href="https://sso.unuja.ac.id/mahasiswa/pengaturan"
+                        class="block px-4 py-2 rounded-lg text-white text-sm sm:text-base font-semibold"
+                        style="background:#00264e;">Pengaturan</a>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="flex-1 py-6 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                    <div class="grid lg:grid-cols-2 gap-6">
+        <!-- Wifi Account Card -->
+        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-5 sm:p-6">
+            <div class="flex items-center gap-3 mb-5">
+                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+                    <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                    </svg>
+                </div>
+                <h2 class="text-lg font-semibold text-gray-800 sm:text-xl">Akun Wi-Fi Kampus</h2>
+            </div>
+            <div class="bg-blue-50 border border-blue-100 rounded-xl p-3 mb-5 flex items-start gap-3">
+                <svg class="w-5 h-5 text-blue-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <p class="text-blue-700 text-sm sm:text-base">Untuk terhubung ke <strong>KAMPUS-NJ</strong>, gunakan
+                    kredensial berikut
+                    di area kampus</p>
+            </div>
+            <form action="https://sso.unuja.ac.id/mahasiswa/wifi" method="POST" id="wifi-form">
+                <input type="hidden" name="_token" value="4uKWCgXf1mTOEEUVq4xj5GihavmZlaw77DQM7VGx" autocomplete="off">                <input type="hidden" name="_form_id" value="mahasiswa_wifi_form">
+<input type="hidden" name="_token_form" value="PzbtY1fB2dPmN3TNs6DkaVFGp3HbCXhMYQxmHkMW">
+                                <div class="mb-4">
+                    <label class="block text-sm sm:text-base font-semibold text-gray-700 mb-2">Nama Pengguna</label>
+                    <input type="text" value="2521400016"
+                        class="w-full px-4 py-2.5 rounded-xl border border-gray-200 bg-gray-50 text-gray-700 text-sm sm:text-base"
+                        disabled>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm sm:text-base font-semibold text-gray-700 mb-2">Kata Sandi <span
+                            class="text-red-500">*</span></label>
+                    <div class="relative">
+                        <input type="password" id="password" name="password" value="2521400016"
+                            class="w-full px-4 py-2.5 rounded-xl border border-gray-200 focus:border-[#00264e] focus:ring-2 focus:ring-[#00264e]/10 outline-none text-sm sm:text-base pr-12">
+                        <button type="button" onclick="togglePwd('password')"
+                            class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-800 hover:text-gray-800">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="bg-amber-50 border border-amber-100 rounded-xl p-3 mb-5 flex items-start gap-3">
+                    <svg class="w-5 h-5 text-amber-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <p class="text-amber-700 text-sm sm:text-base">Kata sandi default sama dengan nama pengguna. Ganti untuk
+                        keamanan.
+                    </p>
+                </div>
+                <button type="submit"
+                    class="w-full bg-[#00264e] hover:bg-[#001f3f] text-white font-semibold py-3 rounded-xl transition-all"
+                    onclick="gtag('event', 'mahasiswa_wifi', {'event_category': 'mahasiswa', 'event_label': 'Wifi Kampus'})">Simpan
+                    Perubahan</button>
+            </form>
+        </div>
+
+        <!-- Guide Cards -->
+        <div class="space-y-4">
+            <!-- Panduan -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-5 sm:p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Panduan Penggunaan</h3>
+                </div>
+                <div class="space-y-3 text-sm sm:text-base">
+                    <div class="flex items-start gap-3"><span
+                            class="w-6 h-6 bg-[#00264e] text-white rounded-full flex items-center justify-center text-sm sm:text-base font-semibold flex-shrink-0">1</span>
+                        <p class="text-gray-800">Pilih jaringan <strong>Kampus-NJ</strong> di pengaturan WiFi perangkat</p>
+                    </div>
+                    <div class="flex items-start gap-3"><span
+                            class="w-6 h-6 bg-[#00264e] text-white rounded-full flex items-center justify-center text-sm sm:text-base font-semibold flex-shrink-0">2</span>
+                        <p class="text-gray-800">Akses <a href="https://wifi.unuja.ac.id" target="_blank"
+                                class="text-[#00264e] font-semibold hover:underline">wifi.unuja.ac.id</a> di browser</p>
+                    </div>
+                    <div class="flex items-start gap-3"><span
+                            class="w-6 h-6 bg-[#00264e] text-white rounded-full flex items-center justify-center text-sm sm:text-base font-semibold flex-shrink-0">3</span>
+                        <p class="text-gray-800">Masuk dengan nama pengguna dan kata sandi</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Troubleshoot -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-5 sm:p-6">
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-gray-800">Pemecahan Masalah</h3>
+                </div>
+                <div class="space-y-3 text-sm sm:text-base">
+                    <div>
+                        <p class="font-medium text-gray-700">Lupa kata sandi?</p>
+                        <p class="text-gray-700">Reset melalui form di atas atau cek menu Wi-Fi di SSO</p>
+                    </div>
+                    <div>
+                        <p class="font-medium text-gray-700">Ganti perangkat?</p>
+                        <p class="text-gray-700">Logout di <a href="https://wifi.unuja.ac.id/logout" target="_blank"
+                                class="text-[#00264e] hover:underline">wifi.unuja.ac.id/logout</a></p>
+                    </div>
+                    <div>
+                        <p class="font-medium text-gray-700">Masalah login?</p>
+                        <p class="text-gray-700">Pastikan terhubung ke Kampus-NJ, hubungi PDSI jika berlanjut</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://sso.unuja.ac.id/assets/plugins/plugins.bundle.js"></script>
+    <script src="https://sso.unuja.ac.id/assets/js/scripts.bundle.js"></script>
+    <script src="https://sso.unuja.ac.id/assets/js/validation.js"></script>
+    <script src="https://sso.unuja.ac.id/assets/js/filehandler.js"></script>
+    <script src="https://sso.unuja.ac.id/assets/js/dateformat.js"></script>
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+        document.getElementById('user-menu-btn').addEventListener('click', function() {
+            document.getElementById('user-menu').classList.toggle('hidden');
+        });
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('#user-menu-btn') && !e.target.closest('#user-menu')) {
+                document.getElementById('user-menu').classList.add('hidden');
+            }
+        });
+    </script>
+        <script>
+        function togglePwd(id) {
+            const i = document.getElementById(id);
+            i.type = i.type === 'password' ? 'text' : 'password';
+        }
+    </script>
+    <script>
+        setTimeout(function() {
+            const alerts = document.querySelectorAll('.alert');
+            alerts.forEach(alert => {
+                alert.style.transition = 'opacity 1s';
+                alert.style.opacity = '0';
+                setTimeout(() => alert.remove(), 1000);
+            });
+        }, 3000);
+    </script>
+</body>
+
+</html>
