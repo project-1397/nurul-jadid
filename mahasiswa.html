@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="id" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SSO Universitas Nurul Jadid</title>
+    <meta name="description" content="Sistem Single Sign-On Terpadu Universitas Nurul Jadid">
+    <link rel="icon" href="https://sso.unuja.ac.id/assets/media/logos/favicon.ico" type="image/x-icon">
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noodp, noydir, nocache, notranslate">
+    <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, notranslate">
+    <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="slurp" content="noindex, nofollow, noarchive, nosnippet">
+    <meta name="duckduckbot" content="noindex, nofollow, noarchive, nosnippet">
+
+    <link rel="preload" as="style" href="https://sso.unuja.ac.id/build/assets/app-CDY3nkT9.css" /><link rel="preload" as="style" href="https://sso.unuja.ac.id/build/assets/vendor-B-uGlmaF.css" /><link rel="modulepreload" as="script" href="https://sso.unuja.ac.id/build/js/app-pARmmrDr.js" /><link rel="modulepreload" as="script" href="https://sso.unuja.ac.id/build/js/vendor-core-C84aI-VW.js" /><link rel="modulepreload" as="script" href="https://sso.unuja.ac.id/build/js/vendor-d5SlOvtk.js" /><link rel="modulepreload" as="script" href="https://sso.unuja.ac.id/build/js/table-DB5BkpT-.js" /><link rel="stylesheet" href="https://sso.unuja.ac.id/build/assets/app-CDY3nkT9.css" /><link rel="stylesheet" href="https://sso.unuja.ac.id/build/assets/vendor-B-uGlmaF.css" /><script type="module" src="https://sso.unuja.ac.id/build/js/app-pARmmrDr.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        [x-cloak] {
+            display: none !important;
+        }
+    </style>
+
+    <meta name="X-CSRF-TOKEN" content="j7gMcFwsHZGVBk2MWERkvonV7TJkUZLU3hCo9DXI">
+
+    </head>
+
+<body
+    class="min-h-screen bg-gray-50/50 antialiased text-gray-800 relative selection:bg-blue-500 selection:text-white overflow-x-hidden">
+
+    <div class="fixed inset-0 z-[-1] pointer-events-none">
+        <div class="absolute inset-0 bg-white"></div>
+        <div class="absolute inset-0 bg-dots-light"></div>
+    </div>
+
+    <div class="min-h-screen flex flex-col relative z-10">
+
+        <header
+            class="fixed top-0 w-full z-50 bg-white/80 supports-backdrop-filter:bg-white/60 border-b border-gray-100 transition-all duration-300"
+            id="navbar">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between items-center h-20">
+
+                    <div class="flex items-center gap-3 group">
+                        <button id="mobile-menu-btn"
+                            class="lg:hidden p-2 rounded-full hover:bg-gray-100 transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </button>
+
+                        <div class="w-8 h-8 rounded-lg items-center justify-center hidden sm:flex">
+                            <img src="https://sso.unuja.ac.id/assets/media/logos/logo.webp" class="w-7 h-7 object-contain"
+                                alt="Logo">
+                        </div>
+                        <div class="hidden sm:block">
+                            <h1 class="text-lg font-bold text-gray-900 tracking-tight leading-none">Portal</h1>
+                            <p class="text-[10px] font-medium text-blue-600 tracking-wide">Universitas Nurul Jadid</p>
+                        </div>
+
+                        <div class="sm:hidden flex items-center gap-2">
+                            <div
+                                class="w-10 h-10 rounded-full bg-linear-to-br from-gray-100 to-gray-50 flex items-center justify-center text-[#00264e] font-bold shadow-inner border border-white">
+                                <img src="https://sso.unuja.ac.id/assets/media/logos/logo.webp" class="w-5 h-5 object-contain"
+                                    alt="Logo">
+                            </div>
+                            <span class="font-bold text-gray-900 text-sm">Portal</span>
+                        </div>
+                    </div>
+
+                    <nav
+                        class="hidden lg:flex items-center gap-1 bg-gray-50/50 p-1.5 rounded-full border border-gray-100/50 backdrop-blur-sm">
+                        <a href="https://sso.unuja.ac.id/mahasiswa"
+                            class="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 bg-white text-blue-700 shadow-sm ring-1 ring-black/5 scale-[1.02]">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg>
+                            Beranda
+                        </a>
+                        <a href="https://sso.unuja.ac.id/mahasiswa/wifi"
+                            class="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-gray-500 hover:text-gray-900 hover:bg-white/60">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0" />
+                            </svg>
+                            Wifi Kampus
+                        </a>
+                        <a href="https://sso.unuja.ac.id/mahasiswa/pengaturan"
+                            class="flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 text-gray-500 hover:text-gray-900 hover:bg-white/60">
+                            <span class="flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
+                                Pengaturan
+                            </span>
+                        </a>
+                    </nav>
+
+                    <div class="flex items-center gap-3">
+                                                    <button id="sidebar-toggle" onclick="window.toggleSidebar()"
+                                class="p-2 rounded-full hover:bg-gray-50 text-gray-500 hover:text-blue-600 transition-colors relative border border-transparent hover:border-gray-100"
+                                title="Papan Informasi">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                                </svg>
+                            </button>
+                        
+                        <div class="relative">
+                            <button id="user-menu-btn"
+                                class="flex items-center gap-2 p-1 rounded-full hover:bg-gray-50 transition-all border border-transparent hover:border-gray-100 ring-2 ring-transparent hover:ring-gray-50"
+                                aria-label="User Menu" aria-expanded="false">
+                                <img src="https://sso.unuja.ac.id/assets/media/logos/settings.webp"
+                                    class="w-8 h-8 rounded-full border border-gray-200 object-cover" alt="user"
+                                    onerror="this.src='https://ui-avatars.com/api/?name=RAMADANI&background=0D8ABC&color=fff'">
+                            </button>
+
+                            <div id="user-menu"
+                                class="hidden absolute right-0 mt-4 w-72 bg-white rounded-3xl shadow-2xl border border-gray-100 py-3 z-50 transform transition-all duration-200 origin-top-right ring-1 ring-black/5">
+                                <div class="px-5 py-4 border-b border-gray-100 bg-gray-50/50">
+                                    <p class="text-sm font-bold text-gray-900 truncate">
+                                        RAMADANI</p>
+                                    <p class="text-xs text-gray-500 truncate mt-0.5">
+                                        rmdn1397.05@gmail.com</p>
+                                </div>
+                                <div class="p-2 space-y-1">
+                                    <a href="https://sso.unuja.ac.id/mahasiswa/histori"
+                                        class="flex items-center gap-3 px-4 py-3 mx-2 rounded-xl text-sm font-medium text-gray-700 hover:bg-blue-50/50 hover:text-blue-700 transition-colors group">
+                                        <span
+                                            class="w-8 h-8 rounded-full bg-blue-100/50 text-blue-600 flex items-center justify-center group-hover:bg-blue-100 transition-colors">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                            </svg>
+                                        </span>
+                                        <span>Histori Aktivitas</span>
+                                    </a>
+                                </div>
+                                <div class="border-t border-gray-100 mt-2 pt-2 p-2">
+                                    <a href="https://sso.unuja.ac.id/logout"
+                                        class="flex items-center gap-3 px-4 py-3 mx-2 rounded-xl text-sm font-medium text-red-600 hover:bg-red-50/50 transition-colors group">
+                                        <span
+                                            class="w-8 h-8 rounded-full bg-red-100/50 text-red-600 flex items-center justify-center group-hover:bg-red-100 transition-colors">
+                                            <svg class="w-4 h-4" fill="none" stroke="currentColor"
+                                                viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                    d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                                            </svg>
+                                        </span>
+                                        <span>Keluar Aplikasi</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mobile-menu"
+                class="hidden lg:hidden border-t border-gray-100/50 bg-white/95 backdrop-blur-xl shadow-lg absolute w-full left-0 top-20 z-40 rounded-b-4xl">
+                <div class="px-6 py-6 space-y-3">
+                    <a href="https://sso.unuja.ac.id/mahasiswa"
+                        class="block px-5 py-3.5 rounded-2xl text-sm font-bold transition-all bg-blue-600 text-white shadow-lg shadow-blue-500/20">Beranda</a>
+                    <a href="https://sso.unuja.ac.id/mahasiswa/wifi"
+                        class="block px-5 py-3.5 rounded-2xl text-sm font-bold transition-all text-gray-600 hover:bg-gray-50">Wifi
+                        Kampus</a>
+                    <a href="https://sso.unuja.ac.id/mahasiswa/pengaturan"
+                        class="block px-5 py-3.5 rounded-2xl text-sm font-bold transition-all text-gray-600 hover:bg-gray-50">Pengaturan</a>
+                </div>
+            </div>
+        </header>
+
+        <main id="main-content-wrapper" class="flex-1 pt-24 pb-6 px-4 sm:px-6 lg:px-8 transition-all duration-300">
+            <div class="max-w-7xl mx-auto">
+                    
+    <div class="grid grid-cols-1 md:grid-cols-12 items-start gap-4 mb-8">
+        <div class="col-span-12 md:col-span-8">
+    <div class="flex flex-col bg-white rounded-[1.25rem] p-5 sm:p-6 border border-[#e8ecf1]">
+        <div class="flex items-center gap-4 sm:gap-5">
+            <div class="relative shrink-0">
+                <div
+                    class="w-[68px] h-[68px] sm:w-[76px] sm:h-[76px] rounded-2xl p-[3px] bg-[linear-gradient(135deg,#dcfce7,#059669)] rotate-3">
+                    <img src="https://ui-avatars.com/api/?name=RAMADANI&amp;background=0f172a&amp;color=fff&amp;size=128"
+                        alt="Avatar" loading="lazy" decoding="async"
+                        class="w-full h-full rounded-[calc(1rem-2px)] object-cover block">
+                </div>
+                <div
+                    class="absolute -bottom-0.5 -right-0.5 w-[13px] h-[13px] bg-emerald-500 border-[2.5px] border-white rounded-full">
+                </div>
+            </div>
+            <div class="flex-1 min-w-0">
+                <div
+                    class="inline-flex items-center gap-[5px] text-[10px] font-bold text-indigo-500 uppercase tracking-wider mb-1 bg-indigo-500/[.07] px-2.5 py-[3px] rounded-full">
+                    <i class="block w-[5px] h-[5px] rounded-full bg-indigo-500"></i> Selamat Datang
+                </div>
+                <h1
+                    class="text-[1.3rem] sm:text-[1.45rem] font-extrabold text-slate-800 tracking-tight leading-tight mb-0.5">
+                    RAMADANI</h1>
+                <p class="text-[13px] text-slate-400 font-medium truncate">rmdn1397.05@gmail.com</p>
+            </div>
+        </div>
+
+                    <div class="h-px my-3 bg-[#FFEDDB]"></div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-2">
+                                                        <div
+                        class="flex items-center gap-2.5 py-2.5 px-3 rounded-[10px] bg-slate-50 border border-[#FFEDDB] relative overflow-hidden">
+                        <div class="absolute left-0 top-0 bottom-0 w-[3px] rounded-r-[3px]"
+                            style="background:linear-gradient(180deg,#3b82f6,#2563eb)"></div>
+                        <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0"
+                            style="background:#dbeafe;color:#2563eb">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <div class="min-w-0">
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-px">
+                                Program Studi</p>
+                            <p class="text-[10px] font-bold text-slate-700 truncate" title="Teknik Informatika">
+                                Teknik Informatika</p>
+                        </div>
+                    </div>
+                                                        <div
+                        class="flex items-center gap-2.5 py-2.5 px-3 rounded-[10px] bg-slate-50 border border-[#FFEDDB] relative overflow-hidden">
+                        <div class="absolute left-0 top-0 bottom-0 w-[3px] rounded-r-[3px]"
+                            style="background:linear-gradient(180deg,#6366f1,#4f46e5)"></div>
+                        <div class="w-8 h-8 rounded-lg flex items-center justify-center shrink-0"
+                            style="background:#e0e7ff;color:#4f46e5">
+                            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M10 6H5a2 2 0 00-2 2v9a2 2 0 002 2h14a2 2 0 002-2V8a2 2 0 00-2-2h-5m-4 0V5a2 2 0 114 0v1m-4 0a2 2 0 104 0m-5 8a2 2 0 100-4 2 2 0 000 4zm0 0c1.306 0 2.417.835 2.83 2M9 14a3.001 3.001 0 00-2.83 2M15 11h3m-3 4h2"></path>
+                            </svg>
+                        </div>
+                        <div class="min-w-0">
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-px">
+                                NIM</p>
+                            <p class="text-[10px] font-bold text-slate-700 truncate" title="2521400016">
+                                2521400016</p>
+                        </div>
+                    </div>
+                            </div>
+            </div>
+</div>
+
+        <style>
+    .wc-pl.is-a {
+        background: #243763 !important;
+        border-color: #FFEDDB !important
+    }
+
+    .wc-pl.is-a::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: #FFEDDB;
+        border-radius: 2px 2px 0 0
+    }
+
+    .wc-pl.is-a .wc-pn {
+        color: #FFEDDB !important
+    }
+
+    .wc-pl.is-a .wc-pt {
+        color: #FFEDDB !important
+    }
+</style>
+
+<div id="weather-card-wrapper" data-accent="#2D4059"
+    class="col-span-12 md:col-span-4 overflow-hidden rounded-[1.25rem] bg-white border border-[#e8ecf1]">
+    
+    <div class="flex items-center justify-between gap-2 px-4 py-3.5"
+        style="background:linear-gradient(135deg,#2D4059,#EA5455)">
+        <div class="flex items-center gap-2.5 min-w-0">
+            <div class="w-8 h-8 rounded-[10px] bg-white/20 flex items-center justify-center shrink-0">
+                <svg width="15" height="15" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364-.707-.707M6.343 6.343l-.707-.707m12.728 0-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
+                </svg>
+            </div>
+            <div class="min-w-0">
+                <div class="text-[13px] font-bold leading-tight text-white truncate">Selamat Siang</div>
+                <div class="text-[11px] leading-tight text-white/85 truncate">Tetap fokus dan penuh semangat</div>
+            </div>
+        </div>
+        <div class="shrink-0 flex flex-col items-end gap-[3px]">
+            <div class="flex items-center gap-[5px] bg-white/20 rounded-lg px-2.5 py-1 shrink-0">
+                <svg width="11" height="11" fill="none" viewBox="0 0 24 24" stroke="#fff" stroke-width="2.5"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364-.707-.707M6.343 6.343l-.707-.707m12.728 0-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
+                </svg>
+                <span id="wc-temp" class="text-[13px] font-bold text-white">--°C</span>
+            </div>
+            <div id="wc-cond" class="text-[11px] text-right text-white/90 font-medium">—</div>
+        </div>
+    </div>
+
+    
+    <div class="px-4 pt-3.5 pb-3">
+        <div id="wc-time" class="text-[32px] font-extrabold text-center leading-none tracking-tight text-slate-800">
+            11<span class="wc-co"
+                style="color:#2D4059">:</span>48<span class="wc-co"
+                style="color:#2D4059">:</span>17</div>
+        <div class="text-center mt-1">
+            <span id="wc-date"
+                class="text-[10px] font-bold text-white uppercase tracking-wider bg-slate-800 px-2.5 py-[5px] rounded-full inline-block">Minggu, 8 Maret 2026</span>
+        </div>
+        <div class="text-center mt-1">
+            <span id="wc-hijri" class="text-[10px] font-semibold tracking-wide inline-flex items-center gap-1"
+                style="color:#2D4059">
+                <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor" class="opacity-70">
+                    <path
+                        d="M12 2.5a9.5 9.5 0 1 0 5.08 17.52A7.5 7.5 0 0 1 12 5.5a7.48 7.48 0 0 1 2.55.45A9.49 9.49 0 0 0 12 2.5z" />
+                </svg>
+                19 Ramadhan 1447 H
+            </span>
+        </div>
+        <div class="h-px my-2 bg-[#FFEDDB]"></div>
+        <div class="text-[10px] font-bold text-slate-600 mb-1.5 tracking-wide flex items-center gap-1.5">
+            <span class="w-[5px] h-[5px] rounded-full" style="background:#2D4059"></span>Waktu Sholat
+            Kabupaten Probolinggo
+        </div>
+        <div id="wc-pills" class="grid grid-cols-4 gap-1">
+            <div class="col-span-4 text-center text-[8px] text-slate-400 py-1" id="wc-load">Memuat jadwal…</div>
+        </div>
+        <div class="mt-2 flex items-center gap-[5px] text-[10px] font-semibold text-slate-400">
+            <svg width="12" height="12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                class="opacity-50">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M10.172 13.828a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.102 1.101" />
+            </svg>
+            Sumber: <a href="https://api.myquran.com/" target="_blank" rel="noopener" class="font-bold no-underline"
+                style="color:#2D4059">api.myquran.com</a>
+        </div>
+    </div>
+</div>
+
+<input type="hidden" id="wc-today-key" value="2026-03-08">
+<input type="hidden" id="wc-server-ts" value="1772945297000">
+    </div>
+
+    
+    <div class="w-full">
+                    <div class="mb-12">
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="h-10 w-1.5 bg-[#00264e] rounded-full"></div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800 tracking-tight">Aplikasi Saya</h1>
+                        <p class="text-gray-500 text-sm">Layanan akademik dan kemahasiswaan</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 sm:gap-4 md:gap-5">
+    
+                    <div class="group relative block h-full">
+            <a href="https://sso.unuja.ac.id/portal/authorize?app_id=Mi0Mg6Sn5Zk0Wg6N&amp;redirect_uri=am.unuja.ac.id%2Fsso&amp;client_id=2521400016&amp;dev_id=Ji5Rs5Vj2Kc2Wt0F&amp;session=MXfgppdFp9Ziqap99GlMiKvaKmJiDrklkcKLXO7J&amp;role=mahasiswa&amp;auth_token=MTc3Mjk0NTI5Ny5hZlNueDIwc3lUV1Z4VzRKLjIyOThhYTAzYjZiYmRkN2M0YzlkZGIxODU4NzNhNDcxM2JiM2E0ODAzNmQ2YjJlZWMwMTIyZmJmYWRlNWVkZjE%3D" >
+                <div
+                    class="absolute inset-0 bg-linear-to-br from-indigo-900 to-blue-900 rounded-2xl sm:rounded-3xl blur opacity-25 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div
+                    class="relative h-full bg-white rounded-2xl sm:rounded-3xl border border-gray-100 p-4 flex flex-col shadow-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-gray-50 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-500 ease-out">
+                    </div>
+
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-3">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-linear-to-br from-indigo-900 to-blue-900 text-white flex items-center justify-center text-lg sm:text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300">
+                                A
+                            </div>
+
+                                                            <div
+                                    class="p-1.5 rounded-full bg-gray-50 text-gray-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                    <svg class="w-4 h-4 transform group-hover:rotate-45 transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                </div>
+                                                    </div>
+
+                        <h3
+                            class="text-sm sm:text-base font-bold text-gray-800 mb-1 group-hover:text-blue-700 transition-colors line-clamp-1">
+                            AM
+                        </h3>
+                        <p class="text-[10px] sm:text-xs text-gray-500 line-clamp-2 leading-relaxed grow">
+                            Aplikasi Mahasiswa
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+                    <div class="group relative block h-full">
+            <a href="https://sso.unuja.ac.id/portal/authorize?app_id=Mz4Nc9Ix4Uk6Cp5F&amp;redirect_uri=risbang.unuja.ac.id%2Fsso&amp;client_id=2521400016&amp;dev_id=Vm9Kb0He0Mm8Yd7M&amp;session=MXfgppdFp9Ziqap99GlMiKvaKmJiDrklkcKLXO7J&amp;role=mahasiswa&amp;auth_token=MTc3Mjk0NTI5Ny5FV2dWQmdCd0ZnZkxQU3prLjQ0ZGQ2ZmFmZjlkZGYwODRhYzM5NzEyOWUyMzgwMDI2YjkwNjljM2E0ZDNjZmRkYTlhMjZmYTBkZDE5MzJkYmY%3D" >
+                <div
+                    class="absolute inset-0 bg-linear-to-br from-purple-900 to-indigo-900 rounded-2xl sm:rounded-3xl blur opacity-25 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div
+                    class="relative h-full bg-white rounded-2xl sm:rounded-3xl border border-gray-100 p-4 flex flex-col shadow-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-gray-50 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-500 ease-out">
+                    </div>
+
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-3">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-linear-to-br from-purple-900 to-indigo-900 text-white flex items-center justify-center text-lg sm:text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300">
+                                R
+                            </div>
+
+                                                            <div
+                                    class="p-1.5 rounded-full bg-gray-50 text-gray-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                    <svg class="w-4 h-4 transform group-hover:rotate-45 transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                </div>
+                                                    </div>
+
+                        <h3
+                            class="text-sm sm:text-base font-bold text-gray-800 mb-1 group-hover:text-blue-700 transition-colors line-clamp-1">
+                            RISBANG
+                        </h3>
+                        <p class="text-[10px] sm:text-xs text-gray-500 line-clamp-2 leading-relaxed grow">
+                            Riset, Abdimas, dan Publikasi
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+                    <div class="group relative block h-full">
+            <a href="https://sso.unuja.ac.id/portal/authorize?app_id=Mo3Ad6Ux2Rl2Vl7K&amp;redirect_uri=ukom4bidang.unuja.ac.id%2Fsso&amp;client_id=2521400016&amp;dev_id=Ji5Rs5Vj2Kc2Wt0F&amp;session=MXfgppdFp9Ziqap99GlMiKvaKmJiDrklkcKLXO7J&amp;role=mahasiswa&amp;auth_token=MTc3Mjk0NTI5Ny5qTmJoM2NwMGJxRnVrcHBaLmUwZjdmNjYzZmU0NDM5ZjMxMjhkYzAxYTU2Njc1NzVlNjc5YjhmNjkyN2E4YzkzMjZmZjg5NzA5ZTA2ZWEzY2M%3D" >
+                <div
+                    class="absolute inset-0 bg-linear-to-br from-red-900 to-rose-900 rounded-2xl sm:rounded-3xl blur opacity-25 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div
+                    class="relative h-full bg-white rounded-2xl sm:rounded-3xl border border-gray-100 p-4 flex flex-col shadow-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-gray-50 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-500 ease-out">
+                    </div>
+
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-3">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-linear-to-br from-red-900 to-rose-900 text-white flex items-center justify-center text-lg sm:text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300">
+                                U
+                            </div>
+
+                                                            <div
+                                    class="p-1.5 rounded-full bg-gray-50 text-gray-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                    <svg class="w-4 h-4 transform group-hover:rotate-45 transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                </div>
+                                                    </div>
+
+                        <h3
+                            class="text-sm sm:text-base font-bold text-gray-800 mb-1 group-hover:text-blue-700 transition-colors line-clamp-1">
+                            UKom 4 Bidang
+                        </h3>
+                        <p class="text-[10px] sm:text-xs text-gray-500 line-clamp-2 leading-relaxed grow">
+                            Lembaga Sertifikasi Profesi dan Kompetensi Keagamaan
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+                    <div class="group relative block h-full">
+            <a href="https://sso.unuja.ac.id/portal/authorize?app_id=EAxvsUDehrgBoHjw&amp;redirect_uri=sintak.unuja.ac.id%2Fsso&amp;client_id=2521400016&amp;dev_id=0JWNePgkXUe6gK7V&amp;session=MXfgppdFp9Ziqap99GlMiKvaKmJiDrklkcKLXO7J&amp;role=mahasiswa&amp;auth_token=MTc3Mjk0NTI5Ny5SVk1ZWWIzazhyVkdQYkMwLjExMTU5ZWNhMzEwMjVmMTgwYzUzYzI3YjU1YzI1YzZlMjA4MzA5OWNiNDUzYjk3MzFiZTk1MDljZTI3YTRmMzQ%3D" >
+                <div
+                    class="absolute inset-0 bg-linear-to-br from-emerald-800 to-teal-900 rounded-2xl sm:rounded-3xl blur opacity-25 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div
+                    class="relative h-full bg-white rounded-2xl sm:rounded-3xl border border-gray-100 p-4 flex flex-col shadow-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-gray-50 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-500 ease-out">
+                    </div>
+
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-3">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-linear-to-br from-emerald-800 to-teal-900 text-white flex items-center justify-center text-lg sm:text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300">
+                                S
+                            </div>
+
+                                                            <div
+                                    class="p-1.5 rounded-full bg-gray-50 text-gray-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                    <svg class="w-4 h-4 transform group-hover:rotate-45 transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                </div>
+                                                    </div>
+
+                        <h3
+                            class="text-sm sm:text-base font-bold text-gray-800 mb-1 group-hover:text-blue-700 transition-colors line-clamp-1">
+                            SINTAK
+                        </h3>
+                        <p class="text-[10px] sm:text-xs text-gray-500 line-clamp-2 leading-relaxed grow">
+                            Sistem Informasi Tugas Akhir
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+                    <div class="group relative block h-full">
+            <a href="https://sso.unuja.ac.id/portal/authorize?app_id=YUr1eMxdByV0iJvF&amp;redirect_uri=sipermata.unuja.ac.id%2Fsso&amp;client_id=2521400016&amp;dev_id=8ZiVo95nM1xUJzhA&amp;session=MXfgppdFp9Ziqap99GlMiKvaKmJiDrklkcKLXO7J&amp;role=mahasiswa&amp;auth_token=MTc3Mjk0NTI5Ny5WdUM5bm9NMElFNVFuT3FlLmM3OGE3YWVlN2Y4NWQ0ZDRjYTVhM2FkNDFlZThlMWQ3MzNhYWEwZjBkMjIwNGU0NTNmZjVjODc0ZDhiMTRmOGY%3D" >
+                <div
+                    class="absolute inset-0 bg-linear-to-br from-blue-800 to-indigo-900 rounded-2xl sm:rounded-3xl blur opacity-25 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div
+                    class="relative h-full bg-white rounded-2xl sm:rounded-3xl border border-gray-100 p-4 flex flex-col shadow-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-gray-50 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-500 ease-out">
+                    </div>
+
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-3">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-linear-to-br from-blue-800 to-indigo-900 text-white flex items-center justify-center text-lg sm:text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300">
+                                S
+                            </div>
+
+                                                            <div
+                                    class="p-1.5 rounded-full bg-gray-50 text-gray-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                    <svg class="w-4 h-4 transform group-hover:rotate-45 transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                </div>
+                                                    </div>
+
+                        <h3
+                            class="text-sm sm:text-base font-bold text-gray-800 mb-1 group-hover:text-blue-700 transition-colors line-clamp-1">
+                            SiPermata
+                        </h3>
+                        <p class="text-[10px] sm:text-xs text-gray-500 line-clamp-2 leading-relaxed grow">
+                            Sistem Permohonan Surat Mahasiswa Terpadu
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+                    <div class="group relative block h-full">
+            <a href="https://sso.unuja.ac.id/portal/authorize?app_id=8kW6ftCYqGSn2Mw5&amp;redirect_uri=repository.unuja.ac.id%2Fsso%2Flogin&amp;client_id=2521400016&amp;dev_id=Ji5Rs5Vj2Kc2Wt0F&amp;session=MXfgppdFp9Ziqap99GlMiKvaKmJiDrklkcKLXO7J&amp;role=mahasiswa&amp;auth_token=MTc3Mjk0NTI5Ny56RHlYRzVsZVV3endEaUVWLmNjYjQ1NjQwYzA1MWYwNTIyNTEyZjkxMDA2ODQ2Zjc0YzI3ZmI1ZGVlYTEyM2NkNGZkN2Q2YzE2YjljYTFlM2Q%3D" >
+                <div
+                    class="absolute inset-0 bg-linear-to-br from-violet-900 to-purple-900 rounded-2xl sm:rounded-3xl blur opacity-25 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div
+                    class="relative h-full bg-white rounded-2xl sm:rounded-3xl border border-gray-100 p-4 flex flex-col shadow-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-gray-50 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-500 ease-out">
+                    </div>
+
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-3">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-linear-to-br from-violet-900 to-purple-900 text-white flex items-center justify-center text-lg sm:text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300">
+                                R
+                            </div>
+
+                                                            <div
+                                    class="p-1.5 rounded-full bg-gray-50 text-gray-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                    <svg class="w-4 h-4 transform group-hover:rotate-45 transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                </div>
+                                                    </div>
+
+                        <h3
+                            class="text-sm sm:text-base font-bold text-gray-800 mb-1 group-hover:text-blue-700 transition-colors line-clamp-1">
+                            Repository
+                        </h3>
+                        <p class="text-[10px] sm:text-xs text-gray-500 line-clamp-2 leading-relaxed grow">
+                            Arsip digital Hasil Riset dan Tugas Akhir
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+                    <div class="group relative block h-full">
+            <a href="https://sso.unuja.ac.id/portal/authorize?app_id=hiIYBuJBeH4MUt37&amp;redirect_uri=elearning.unuja.ac.id%2Fsso.php&amp;client_id=2521400016&amp;dev_id=Ji5Rs5Vj2Kc2Wt0F&amp;session=MXfgppdFp9Ziqap99GlMiKvaKmJiDrklkcKLXO7J&amp;role=mahasiswa&amp;auth_token=MTc3Mjk0NTI5Ny5vZkx6emNCZHQ4eTgyWXdXLjJhMDQ5OTliZGQ0OTlhNDE5MTc5YzI3Mjc5MTRlODE2YjM0MzA0NzM1N2MzM2RlYjk3ZTNiNWVkYWY3NTRiYzQ%3D" >
+                <div
+                    class="absolute inset-0 bg-linear-to-br from-indigo-900 to-blue-900 rounded-2xl sm:rounded-3xl blur opacity-25 group-hover:opacity-100 transition-opacity duration-500">
+                </div>
+                <div
+                    class="relative h-full bg-white rounded-2xl sm:rounded-3xl border border-gray-100 p-4 flex flex-col shadow-sm transition-all duration-300 group-hover:-translate-y-1 group-hover:shadow-xl overflow-hidden">
+                    <div
+                        class="absolute top-0 right-0 w-24 h-24 bg-gray-50 rounded-full -mr-12 -mt-12 group-hover:scale-150 transition-transform duration-500 ease-out">
+                    </div>
+
+                    <div class="relative z-10 flex flex-col h-full">
+                        <div class="flex justify-between items-start mb-3">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-linear-to-br from-indigo-900 to-blue-900 text-white flex items-center justify-center text-lg sm:text-xl font-bold shadow-md group-hover:scale-110 transition-transform duration-300">
+                                E
+                            </div>
+
+                                                            <div
+                                    class="p-1.5 rounded-full bg-gray-50 text-gray-400 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                                    <svg class="w-4 h-4 transform group-hover:rotate-45 transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                </div>
+                                                    </div>
+
+                        <h3
+                            class="text-sm sm:text-base font-bold text-gray-800 mb-1 group-hover:text-blue-700 transition-colors line-clamp-1">
+                            E-Learning
+                        </h3>
+                        <p class="text-[10px] sm:text-xs text-gray-500 line-clamp-2 leading-relaxed grow">
+                            Media Pembelajaran Digital
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+            </div>
+            </div>
+            </div>
+        </main>
+
+                    <div id="sidebar-backdrop" onclick="window.toggleSidebar()"
+                class="fixed inset-0 bg-black/50 backdrop-blur-[2px] z-55 opacity-0 pointer-events-none transition-opacity duration-300 lg:hidden">
+            </div>
+
+            <div id="sidebar-informasi" style="transition: translate 300ms ease-in-out"
+                class="fixed inset-0 lg:inset-y-0 lg:inset-x-auto lg:right-0 lg:w-[450px] z-60 translate-x-full lg:top-16 lg:h-[calc(100vh-4rem)] flex flex-col pointer-events-auto">
+                <div id="papan-informasi-container"
+    data-ajax-url="https://sso.unuja.ac.id/mahasiswa"
+    data-state="closed"
+    class="h-full flex flex-col bg-white/90 backdrop-blur-xl shadow-2xl relative lg:rounded-l-4xl overflow-hidden">
+
+    <div class="shrink-0 px-3 py-3 sm:px-5 sm:py-6 bg-slate-900 relative z-10 shadow-lg overflow-hidden group">
+        <div
+            class="absolute inset-0 bg-linear-to-br from-blue-600/30 to-purple-600/30 opacity-50 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+        </div>
+        <div
+            class="absolute -top-16 -right-16 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl animate-pulse pointer-events-none">
+        </div>
+
+        <div class="relative z-10 flex items-center justify-between gap-2 sm:gap-4 mb-2 sm:mb-6">
+            <div>
+                <h2 class="text-sm sm:text-xl font-bold text-white tracking-tight flex items-center gap-1.5 sm:gap-2">
+                    <svg class="w-4 h-4 sm:w-6 sm:h-6 text-yellow-400 drop-shadow-md" fill="none"
+                        stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
+                    </svg>
+                    Papan Informasi
+                </h2>
+                <p class="text-[10px] sm:text-xs text-blue-200 mt-0.5 sm:mt-1 ml-6 sm:ml-8">Update terkini kampus</p>
+            </div>
+
+            <button onclick="toggleSidebar()"
+                class="p-1.5 sm:p-2 text-blue-200 hover:text-white hover:bg-white/10 rounded-xl transition-all shadow-sm border border-transparent hover:border-white/20">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <div class="flex flex-col gap-2 sm:gap-4">
+
+            <div class="relative w-full group">
+                <input type="text" id="papan-info-search" name="q" value=""
+                    class="peer block w-full py-2 sm:py-3 pl-9 sm:pl-11 pr-9 text-[11px] sm:text-sm text-white bg-white/10 border border-white/10 rounded-full focus:border-blue-400 focus:bg-white/20 focus:ring-4 focus:ring-blue-400/20 placeholder-blue-300/50 transition-all outline-none shadow-sm group-hover:border-white/20"
+                    placeholder="Cari informasi..." autocomplete="off">
+
+                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-blue-300/70 peer-focus:text-blue-200 transition-colors"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                </div>
+
+                <button type="button"
+                    class="absolute inset-y-0 right-0 flex items-center pr-3 opacity-0 scale-75 peer-focus:opacity-100 peer-focus:scale-100 peer-placeholder-shown:opacity-0 peer-placeholder-shown:scale-75 pointer-events-none peer-focus:pointer-events-auto transition-all duration-200">
+                    <svg class="w-4 h-4 text-blue-300 hover:text-white rounded-full hover:bg-white/20 p-0.5"
+                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex items-center gap-3 overflow-x-auto no-scrollbar pb-3 pt-2 px-1" id="info-tabs">
+                
+                                                        <button type="button" onclick="filterInfo('all', this)"
+                        data-inactive="bg-white/10 text-blue-200 border-white/10 hover:bg-white/20 border" data-active="bg-white text-[#00264e] ring-2 ring-white/50 shadow-lg font-bold border-transparent"
+                        data-selected="true"
+                        class="tab-btn px-4 py-2 sm:px-5 sm:py-2.5 mb-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300 bg-white text-[#00264e] ring-2 ring-white/50 shadow-lg font-bold border-transparent">
+                        Semua
+                    </button>
+                                                        <button type="button" onclick="filterInfo('informasi', this)"
+                        data-inactive="bg-white/5 text-cyan-200 border-white/5 hover:bg-white/10 border" data-active="bg-cyan-500 text-white ring-2 ring-cyan-400 shadow-lg font-bold border-transparent"
+                        data-selected="false"
+                        class="tab-btn px-4 py-2 sm:px-5 sm:py-2.5 mb-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300 bg-white/5 text-cyan-200 border-white/5 hover:bg-white/10 border">
+                        Informasi
+                    </button>
+                                                        <button type="button" onclick="filterInfo('pengumuman', this)"
+                        data-inactive="bg-white/5 text-orange-200 border-white/5 hover:bg-white/10 border" data-active="bg-orange-500 text-white ring-2 ring-orange-400 shadow-lg font-bold border-transparent"
+                        data-selected="false"
+                        class="tab-btn px-4 py-2 sm:px-5 sm:py-2.5 mb-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300 bg-white/5 text-orange-200 border-white/5 hover:bg-white/10 border">
+                        Pengumuman
+                    </button>
+                                                        <button type="button" onclick="filterInfo('agenda', this)"
+                        data-inactive="bg-white/5 text-violet-200 border-white/5 hover:bg-white/10 border" data-active="bg-violet-500 text-white ring-2 ring-violet-400 shadow-lg font-bold border-transparent"
+                        data-selected="false"
+                        class="tab-btn px-4 py-2 sm:px-5 sm:py-2.5 mb-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300 bg-white/5 text-violet-200 border-white/5 hover:bg-white/10 border">
+                        Agenda
+                    </button>
+                                                        <button type="button" onclick="filterInfo('panduan', this)"
+                        data-inactive="bg-white/5 text-emerald-200 border-white/5 hover:bg-white/10 border" data-active="bg-emerald-500 text-white ring-2 ring-emerald-400 shadow-lg font-bold border-transparent"
+                        data-selected="false"
+                        class="tab-btn px-4 py-2 sm:px-5 sm:py-2.5 mb-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300 bg-white/5 text-emerald-200 border-white/5 hover:bg-white/10 border">
+                        Panduan
+                    </button>
+                                                        <button type="button" onclick="filterInfo('penting', this)"
+                        data-inactive="bg-white/5 text-rose-200 border-white/5 hover:bg-white/10 border" data-active="bg-rose-500 text-white ring-2 ring-rose-400 shadow-lg font-bold border-transparent"
+                        data-selected="false"
+                        class="tab-btn px-4 py-2 sm:px-5 sm:py-2.5 mb-2 rounded-full text-xs sm:text-sm font-medium whitespace-nowrap transition-all duration-300 bg-white/5 text-rose-200 border-white/5 hover:bg-white/10 border">
+                        Penting
+                    </button>
+                            </div>
+        </div>
+    </div>
+
+            <div id="papan-info-list-container" class="flex-1 overflow-y-auto custom-scroll">
+            <div class="flex items-center justify-center py-20">
+                <div class="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600"></div>
+            </div>
+        </div>
+    </div>
+
+<div id="papan-info-detail-modal" class="fixed inset-0 hidden z-99999">
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm transition-opacity" onclick="window.closeDetailModal()">
+    </div>
+    <div class="absolute inset-0 flex items-end sm:items-center justify-center sm:p-4">
+        <div class="relative bg-white rounded-t-2xl sm:rounded-4xl shadow-2xl w-full sm:max-w-5xl max-h-[85vh] sm:max-h-[90vh] flex flex-col transform transition-all scale-95 opacity-0 overflow-hidden"
+            id="detail-modal-panel">
+
+            <div
+                class="shrink-0 px-4 py-4 sm:px-6 sm:py-6 flex items-center justify-between bg-slate-900 relative overflow-hidden group">
+
+                <div
+                    class="absolute inset-0 bg-linear-to-br from-blue-600/30 to-purple-600/30 opacity-50 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none">
+                </div>
+
+                <div
+                    class="absolute top-0 right-0 w-32 h-32 bg-blue-500/20 rounded-full blur-3xl -mr-16 -mt-16 pointer-events-none animate-pulse">
+                </div>
+
+                <div class="relative z-10 w-full flex justify-between items-center">
+                    <div>
+                        <span id="detail-modal-badge"
+                            class="inline-flex items-center px-2 py-0.5 sm:px-2.5 sm:py-1 text-[10px] sm:text-xs font-bold rounded-lg border shadow-sm mb-2 sm:mb-3"></span>
+                        <h3 class="text-base sm:text-2xl font-bold text-white leading-snug tracking-tight"
+                            id="detail-modal-title">
+                        </h3>
+                        <p class="text-[11px] sm:text-sm text-blue-200 mt-1 sm:mt-2 flex items-center gap-1.5 sm:gap-2">
+                            <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-blue-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span id="detail-modal-date"></span>
+                        </p>
+                    </div>
+
+                    <button onclick="window.closeDetailModal()"
+                        class="text-blue-200 hover:text-white bg-white/10 hover:bg-white/20 p-1.5 sm:p-2 rounded-full transition-colors shadow-sm border border-white/10 shrink-0 self-start -mt-1 -mr-1 sm:-mt-2 sm:-mr-2">
+                        <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex-1 overflow-y-auto px-4 py-4 sm:px-8 sm:py-8 custom-scroll">
+
+                <div id="detail-modal-media" class="mb-6 rounded-2xl overflow-hidden shadow-lg" style="display: none;">
+                </div>
+
+                <div class="prose prose-sm sm:prose-lg max-w-none text-gray-600 leading-relaxed"
+                    id="detail-modal-content"></div>
+
+                <div id="detail-modal-attachment" class="mt-8" style="display: none;">
+                    <p class="text-sm font-bold text-gray-900 mb-3 uppercase tracking-wide">Lampiran</p>
+                    <a href="#" target="_blank"
+                        class="flex items-center gap-4 p-4 rounded-xl border border-gray-200 bg-gray-50 hover:bg-gray-100 transition-colors group">
+                        <div
+                            class="w-12 h-12 bg-white rounded-lg flex items-center justify-center text-blue-600 shadow-sm border border-gray-100">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M15.172 7l-6.586 6.586a2 2 0 102.828 2.828l6.414-6.586a4 4 0 00-5.656-5.656l-6.415 6.585a6 6 0 108.486 8.486L20.5 13" />
+                            </svg>
+                        </div>
+                        <div>
+                            <p
+                                class="text-base font-semibold text-gray-800 group-hover:text-blue-600 transition-colors">
+                                Unduh Lampiran</p>
+                            <p class="text-sm text-gray-500">Klik untuk membuka file dokumen</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div
+                class="shrink-0 px-4 py-3 sm:px-6 sm:py-4 flex justify-end gap-2 sm:gap-3 bg-gray-50/50 rounded-b-2xl">
+                <a id="detail-modal-link-btn" href="#" target="_blank"
+                    class="items-center gap-1.5 sm:gap-2 px-3.5 py-2 sm:px-5 sm:py-2.5 bg-[#00264e] text-white text-xs sm:text-sm font-bold rounded-xl hover:bg-[#001f3f] transition-all shadow-sm hover:shadow-md"
+                    style="display: none;">
+                    Buka Tautan
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                </a>
+                <button onclick="window.closeDetailModal()"
+                    class="px-3.5 py-2 sm:px-5 sm:py-2.5 bg-white text-gray-600 text-xs sm:text-sm font-bold rounded-xl border border-gray-200 hover:bg-gray-50 transition-colors">
+                    Tutup
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .custom-scroll::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .custom-scroll::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .custom-scroll::-webkit-scrollbar-thumb {
+        background-color: #cbd5e1;
+        border-radius: 20px;
+    }
+
+    .custom-scroll::-webkit-scrollbar-thumb:hover {
+        background-color: #94a3b8;
+    }
+</style>
+            </div>
+
+            <script>
+                (function() {
+                    var sidebar = document.getElementById('sidebar-informasi');
+                    var mainContent = document.getElementById('main-content-wrapper');
+                    var saved = localStorage.getItem('sidebarOpen');
+                    var isDesktop = window.innerWidth >= 1024;
+
+                    if (isDesktop && saved !== 'false' && sidebar) {
+                        sidebar.style.translate = '0';
+                        sidebar.dataset.state = 'open';
+                        if (mainContent) mainContent.classList.add('lg:mr-[450px]');
+                    }
+                })();
+            </script>
+        
+        <footer class="bg-white/50 backdrop-blur-sm border-t border-gray-100 py-8 mt-auto">
+            <div class="max-w-7xl mx-auto px-4 text-center text-xs font-medium text-gray-400">
+                <p class="text-gray-800 text-xs sm:text-sm font-semibold">
+                    © 2026 Pusat Data & Sistem Informasi Universitas Nurul Jadid
+                </p>
+            </div>
+        </footer>
+    </div>
+
+        </body>
+
+</html>
